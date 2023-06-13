@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -902.9192757010444,
-    "scrollLeft": -239.99999046325732,
+    "scrollTop": -894.5859426988479,
+    "scrollLeft": -384.9999847014753,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -194,29 +194,6 @@
             "id": "50891920-19a2-43ee-82d9-7344bee0e646"
           },
           {
-            "name": "ANSWERS_ID",
-            "comment": "설문 답 코드",
-            "dataType": "VARCHAR(50)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 87.9599609375,
-              "widthComment": 74.2236328125,
-              "widthDataType": 87.71875,
-              "widthDefault": 60
-            },
-            "id": "2fa34711-cd97-4429-8781-a9ae3071be24"
-          },
-          {
             "name": "QUESTIONS_ID",
             "comment": "설문 문항 코드",
             "dataType": "VARCHAR(50)",
@@ -263,29 +240,6 @@
             "id": "d3105920-f5ed-443f-b202-60133b7e05ba"
           },
           {
-            "name": "ANSWERS_ID",
-            "comment": "설문 답변 코드 ",
-            "dataType": "VARCHAR(50)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 87.9599609375,
-              "widthComment": 90.83544921875,
-              "widthDataType": 87.71875,
-              "widthDefault": 60
-            },
-            "id": "43a5afb5-84bb-48e7-b3d8-e30dfb36319a"
-          },
-          {
             "name": "POLLS_CHOICE",
             "comment": "설문 답항 코드",
             "dataType": "VARCHAR(50)",
@@ -313,7 +267,7 @@
           "active": false,
           "left": 508.3387,
           "top": 1079.5861,
-          "zIndex": 492,
+          "zIndex": 496,
           "widthName": 124.33203125,
           "widthComment": 60
         },
@@ -396,9 +350,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 955.0053,
-          "top": 1432.9187,
-          "zIndex": 494,
+          "left": 635.8387,
+          "top": 1427.9187,
+          "zIndex": 498,
           "widthName": 101.70263671875,
           "widthComment": 61.2236328125
         },
@@ -431,7 +385,7 @@
           "columnIds": [
             "50891920-19a2-43ee-82d9-7344bee0e646"
           ],
-          "x": 753.39680546875,
+          "x": 751.590897265625,
           "y": 1079.5861,
           "direction": "top"
         },
@@ -457,8 +411,8 @@
           "columnIds": [
             "5beb9f91-b6c8-4d40-a249-8a32b7327a2a"
           ],
-          "x": 998.4549109375,
-          "y": 1175.5861,
+          "x": 994.84309453125,
+          "y": 1155.0861,
           "direction": "right"
         },
         "constraintName": "fk_polls_questions_to_polls",
@@ -483,9 +437,9 @@
           "columnIds": [
             "88be81f1-5af3-4aa4-85e8-45dbcc61e55e"
           ],
-          "x": 1176.827809765625,
-          "y": 1432.9187,
-          "direction": "top"
+          "x": 1079.48371953125,
+          "y": 1493.1687,
+          "direction": "right"
         },
         "constraintName": "fk_polls_questions_to_polls_choice",
         "visible": true,
@@ -500,17 +454,17 @@
           "columnIds": [
             "efcebc0c-2492-4a9d-aee4-42c555be2676"
           ],
-          "x": 955.0053,
-          "y": 1498.1687,
-          "direction": "left"
+          "x": 857.661209765625,
+          "y": 1427.9187,
+          "direction": "top"
         },
         "end": {
           "tableId": "e9c674c9-06d3-4e2c-b9cd-6c2eafd455f0",
           "columnIds": [
             "c5d1cac4-996c-4ce0-a9f5-808254001673"
           ],
-          "x": 753.39680546875,
-          "y": 1271.5861,
+          "x": 751.590897265625,
+          "y": 1230.5861,
           "direction": "bottom"
         },
         "constraintName": "fk_polls_choice_to_polls_statistics",
