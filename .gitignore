@@ -1,2 +1,4 @@
 bin/PollsWithDB.class
 bin/*
+bin/pollsus/PollStatistics.class
+bin/pollsus/*
