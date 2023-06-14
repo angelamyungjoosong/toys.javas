@@ -52,11 +52,11 @@ public class PollsWithDB {
                     }}
                 }
                 
-                // else if (workKey.equals("S")) {
-                //     System.out.print("-- 총 설문자");
-                // }
-                // else {
-                // }
+                 else if (workKey.equals("S")) {
+                     System.out.print("-- 총 설문자");
+                 }
+                 else {
+                 }
 
             }
         } catch (Exception e) {
