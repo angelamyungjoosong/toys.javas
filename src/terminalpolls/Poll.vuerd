@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -959.5859401159793,
-    "scrollLeft": -374.99998509883926,
+    "scrollTop": -957.9192735155399,
+    "scrollLeft": -476.6666477256358,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -43,7 +43,7 @@
   "table": {
     "tables": [
       {
-        "name": "PQUESTIONS",
+        "name": "QUESTIONS",
         "comment": "설문 문항",
         "columns": [
           {
@@ -94,11 +94,11 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 1154.1725,
           "top": 1345.4196,
-          "zIndex": 42,
-          "widthName": 87.236328125,
+          "zIndex": 63,
+          "widthName": 78.5654296875,
           "widthComment": 60
         },
         "visible": true,
