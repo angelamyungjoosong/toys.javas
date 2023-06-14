@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -957.9192735155399,
-    "scrollLeft": -476.6666477256358,
+    "scrollTop": -956.2526069151007,
+    "scrollLeft": -602.4999760588021,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -94,7 +94,7 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 1154.1725,
           "top": 1345.4196,
           "zIndex": 63,
@@ -171,29 +171,6 @@
         "comment": "설문 통계",
         "columns": [
           {
-            "name": "RESPONDENTS_ID",
-            "comment": "설문자 코드",
-            "dataType": "VARCHAR(50)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 121.18994140625,
-              "widthComment": 70.61181640625,
-              "widthDataType": 87.71875,
-              "widthDefault": 60
-            },
-            "id": "50891920-19a2-43ee-82d9-7344bee0e646"
-          },
-          {
             "name": "STATISTICS_ID",
             "comment": "설문 통계 코드",
             "dataType": "VARCHAR(50)",
@@ -217,7 +194,30 @@
             "id": "d3105920-f5ed-443f-b202-60133b7e05ba"
           },
           {
-            "name": "CHOICE",
+            "name": "RESPONDENTS_ID",
+            "comment": "설문자 코드",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 121.18994140625,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "50891920-19a2-43ee-82d9-7344bee0e646"
+          },
+          {
+            "name": "CHOICE_ID",
             "comment": "설문 답항 코드",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -232,7 +232,7 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 72.7890625,
               "widthComment": 87.2236328125,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -244,7 +244,7 @@
           "active": false,
           "left": 508.3387,
           "top": 1079.5861,
-          "zIndex": 48,
+          "zIndex": 68,
           "widthName": 75.1884765625,
           "widthComment": 60
         },
