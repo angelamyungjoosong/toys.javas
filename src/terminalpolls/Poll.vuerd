@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -943.7526074118059,
-    "scrollLeft": -470.8333146240981,
+    "scrollTop": -947.0859406126847,
+    "scrollLeft": -789.9999686082205,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -157,9 +157,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1102.5046,
-          "top": 992.919,
-          "zIndex": 45,
+          "left": 1109.7963,
+          "top": 973.1274,
+          "zIndex": 129,
           "widthName": 100.9599609375,
           "widthComment": 60
         },
@@ -242,9 +242,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 508.3387,
-          "top": 1079.5861,
-          "zIndex": 122,
+          "left": 463.5475,
+          "top": 1076.4615,
+          "zIndex": 128,
           "widthName": 75.1884765625,
           "widthComment": 60
         },
@@ -415,8 +415,8 @@
           "columnIds": [
             "2657cedd-e651-4e0a-984b-2a3a01884d7e"
           ],
-          "x": 1102.5046,
-          "y": 1047.9189999999999,
+          "x": 1109.7963,
+          "y": 1028.1273999999999,
           "direction": "left"
         },
         "end": {
@@ -424,8 +424,8 @@
           "columnIds": [
             "50891920-19a2-43ee-82d9-7344bee0e646"
           ],
-          "x": 1026.36555546875,
-          "y": 1112.2111,
+          "x": 981.57435546875,
+          "y": 1109.0865,
           "direction": "right"
         },
         "constraintName": "fk_polls_respondents_to_polls",
@@ -502,8 +502,8 @@
           "columnIds": [
             "7b5370b9-49fc-4970-a7f7-c98df49e7a56"
           ],
-          "x": 1026.36555546875,
-          "y": 1177.4611,
+          "x": 981.57435546875,
+          "y": 1174.3365,
           "direction": "right"
         },
         "constraintName": "fk_question_choice_code _to_statistics",
