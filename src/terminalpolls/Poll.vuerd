@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -947.9192739129045,
-    "scrollLeft": -466.6666481229999,
-    "zoomLevel": 1,
+    "scrollTop": -959.5859401159793,
+    "scrollLeft": -374.99998509883926,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -43,7 +43,7 @@
   "table": {
     "tables": [
       {
-        "name": "POLLS_QUESTIONS",
+        "name": "PQUESTIONS",
         "comment": "설문 문항",
         "columns": [
           {
@@ -97,15 +97,15 @@
           "active": false,
           "left": 1154.1725,
           "top": 1345.4196,
-          "zIndex": 16,
-          "widthName": 127.708984375,
+          "zIndex": 42,
+          "widthName": 87.236328125,
           "widthComment": 60
         },
         "visible": true,
         "id": "d7543a02-ff06-4b69-9ac3-ce6712b7133b"
       },
       {
-        "name": "POLLS_RESPONDENTS",
+        "name": "RESPONDENTS",
         "comment": "설문자",
         "columns": [
           {
@@ -159,15 +159,15 @@
           "active": false,
           "left": 1102.5046,
           "top": 992.919,
-          "zIndex": 17,
-          "widthName": 150.103515625,
+          "zIndex": 45,
+          "widthName": 100.9599609375,
           "widthComment": 60
         },
         "visible": true,
         "id": "fa1b742a-fd75-4b56-bc9a-42233a74a929"
       },
       {
-        "name": "POLLS_STATISTICS",
+        "name": "STATISTICS",
         "comment": "설문 통계",
         "columns": [
           {
@@ -194,7 +194,7 @@
             "id": "50891920-19a2-43ee-82d9-7344bee0e646"
           },
           {
-            "name": "POLLS_STATISTICS_ID",
+            "name": "STATISTICS_ID",
             "comment": "설문 통계 코드",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -209,7 +209,7 @@
               "pk": true,
               "fk": false,
               "pfk": false,
-              "widthName": 144.56201171875,
+              "widthName": 95.41845703125,
               "widthComment": 87.2236328125,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -217,7 +217,7 @@
             "id": "d3105920-f5ed-443f-b202-60133b7e05ba"
           },
           {
-            "name": "POLLS_CHOICE",
+            "name": "CHOICE",
             "comment": "설문 답항 코드",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -232,7 +232,7 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 101.70263671875,
+              "widthName": 60,
               "widthComment": 87.2236328125,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -244,19 +244,19 @@
           "active": false,
           "left": 508.3387,
           "top": 1079.5861,
-          "zIndex": 5,
-          "widthName": 124.33203125,
+          "zIndex": 48,
+          "widthName": 75.1884765625,
           "widthComment": 60
         },
         "visible": true,
         "id": "e9c674c9-06d3-4e2c-b9cd-6c2eafd455f0"
       },
       {
-        "name": "POLLS_CHOICE",
+        "name": "CHOICE",
         "comment": "설문 답항 ",
         "columns": [
           {
-            "name": "POLLS_CHOICE",
+            "name": "CHOICE",
             "comment": "설문 답항",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -271,7 +271,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 101.70263671875,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -302,7 +302,7 @@
             "id": "88be81f1-5af3-4aa4-85e8-45dbcc61e55e"
           },
           {
-            "name": "POLLS_CHOICE_ID",
+            "name": "CHOICE_ID",
             "comment": "설문 답항 코드",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -317,7 +317,7 @@
               "pk": true,
               "fk": false,
               "pfk": false,
-              "widthName": 121.9326171875,
+              "widthName": 72.7890625,
               "widthComment": 87.2236328125,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -329,8 +329,8 @@
           "active": false,
           "left": 535.8388,
           "top": 1436.2521,
-          "zIndex": 15,
-          "widthName": 101.70263671875,
+          "zIndex": 60,
+          "widthName": 60,
           "widthComment": 61.2236328125
         },
         "visible": true,
@@ -362,7 +362,7 @@
           "columnIds": [
             "50891920-19a2-43ee-82d9-7344bee0e646"
           ],
-          "x": 994.84309453125,
+          "x": 971.47102421875,
           "y": 1144.8361,
           "direction": "right"
         },
@@ -388,7 +388,7 @@
           "columnIds": [
             "88be81f1-5af3-4aa4-85e8-45dbcc61e55e"
           ],
-          "x": 999.7138,
+          "x": 976.57659296875,
           "y": 1501.5021,
           "direction": "right"
         },
@@ -405,7 +405,7 @@
           "columnIds": [
             "efcebc0c-2492-4a9d-aee4-42c555be2676"
           ],
-          "x": 767.7763,
+          "x": 756.207696484375,
           "y": 1436.2521,
           "direction": "top"
         },
@@ -414,7 +414,7 @@
           "columnIds": [
             "c5d1cac4-996c-4ce0-a9f5-808254001673"
           ],
-          "x": 751.590897265625,
+          "x": 739.904862109375,
           "y": 1210.0861,
           "direction": "bottom"
         },
