@@ -9,6 +9,8 @@ import javax.print.DocFlavor.STRING;
 
 public class PollsWithDB {
     public static HashMap<String, String> map2 = new HashMap<>();
+    public static HashMap<String, String> resNumberMap = new HashMap<>();
+
     public static void main(String[] args) {
         try {
             
@@ -34,18 +36,17 @@ public class PollsWithDB {
                 workKey = scanner.nextLine();
 
                 if (workKey.equals("P")) {
-                    System.out.println("- 설문자 가능 명단(가입 완료)");
-                    query = "SELECT respondents\n" + //
-                            "FROM RESPONDENTS";
+                    query = "SELECT T_RESP.RESPONDENTS, T_RESP.RESPONDENTS_ID\n" + //
+                            "FROM respondents AS T_RESP\n" + //
+                            ";";
                     ResultSet resultSet0 = statement.executeQuery(query);
-                 
-                    HashMap<String, String> resNumberMap = new HashMap<>();
+                    
                     while (resultSet0.next()) {
                         System.out.print(number + ". " + resultSet0.getString("RESPONDENTS") + ", ");
-                        resNumberMap.put(String.valueOf(number), query);
+                        resNumberMap.put(String.valueOf(number), resultSet0.getString("RESPONDENTS_ID"));
                         number = number + 1;
                     }
-
+                        resNumberMap.get(String.valueOf(number));
                     int cnt = 0;
                     while (cnt == 0) {
                         System.out.println();
