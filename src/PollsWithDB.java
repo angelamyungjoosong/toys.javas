@@ -5,7 +5,10 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import javax.print.DocFlavor.STRING;
+
 public class PollsWithDB {
+    public static HashMap<String, String> map2 = new HashMap<>();
     public static void main(String[] args) {
         try {
             
@@ -21,6 +24,9 @@ public class PollsWithDB {
             String query = "";
             String query2 = "";
             String query3 = "";
+            int num = 1;
+            int number = 1;
+            HashMap<String, String> map1 = new HashMap<>();
 
             String workKey = "A";
             while (!workKey.equals("E")) {
@@ -32,7 +38,7 @@ public class PollsWithDB {
                     query = "SELECT respondents\n" + //
                             "FROM RESPONDENTS";
                     ResultSet resultSet0 = statement.executeQuery(query);
-                    int number = 1;
+                 
                     HashMap<String, String> resNumberMap = new HashMap<>();
                     while (resultSet0.next()) {
                         System.out.print(number + ". " + resultSet0.getString("RESPONDENTS") + ", ");
@@ -52,21 +58,33 @@ public class PollsWithDB {
                         } else {
                             System.out.println("--설문시작");
                             cnt = 1;
-                            query3 = "select questions\n" + //
-                                    "from questions as ques";
-                            ResultSet resultSet = statement.executeQuery(query3);
-                            while (resultSet.next()) {
-                                System.out.println(resultSet.getString("questions"));
-                                query2 = "SELECT choice\n" + //
-                                        "FROM choice;";
-                                statement = connection.createStatement();
-                                ResultSet resultSet2 = statement.executeQuery(query2);
-                                while (resultSet2.next()) {
-                                    System.out.print(resultSet2.getString("choice") + " ");
-                                }
-                                System.out.println();
-                                System.out.print("답: ");
-                                int answer = scanner.nextInt();
+                            String query4 = "SELECT *\n" + //
+                         "FROM questions as ques;";
+                            ResultSet resultSet = statement.executeQuery(query4);
+                while (resultSet.next())
+            {
+                System.out.println(resultSet.getString("questions"));
+                String questionID = resultSet.getString("questions_id");
+                query2 = "SELECT *\n" + //
+                         "FROM choice as cho;";
+                statement = connection.createStatement();
+                ResultSet resultSet2 = statement.executeQuery(query2);
+                while (resultSet2.next())
+                {
+                    System.out.print(resultSet2.getString("choice") + " ");
+                    String choiceID = resultSet2.getString("choice_id");
+                    map2.put(String.valueOf(num), choiceID);
+                    num = num + 1;
+                }
+                System.out.println();
+                System.out.print("답: ");
+                ResultSet resultSet3 = statement.executeQuery(query2);
+               int answer = scanner.nextInt();
+                if (resultSet3.next())
+                {
+                    map1.put(questionID, map2.get(String.valueOf(answer)));
+                }
+                System.out.println();
                             }
                         }
                     }
@@ -81,9 +99,11 @@ public class PollsWithDB {
 
 
             }
-        } catch (Exception e) {
+        }
+         catch (Exception e) {
 
             // TODO: handle exception
-        }
+        
     }
+}
 }
