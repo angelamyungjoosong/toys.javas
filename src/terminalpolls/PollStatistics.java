@@ -42,8 +42,10 @@ public class PollStatistics {
     
     
     // -- 총 설문자 : 4명 을 출력
-        query = "SELECT count(RESPONDENTS) AS CNT_RES\n" + //
-                    "FROM respondents;";
+        query = "SELECT COUNT(*)" +
+                "FROM respondents AS T_RES" +
+	                "INNER JOIN statistics AS T_STA" +
+                    "ON T_RES.RESPONDENTS_ID = T_STA.RESPONDENTS_ID";
     ResultSet resultSet = statement.executeQuery(query) ;
     int res = resultSet.getInt("CNT_RES");
     System.out.println("설문에 참여한 사람 수: " + res);
@@ -58,20 +60,14 @@ public class PollStatistics {
         String query1;
         ResultSet resultSet1;
         query = "SELECT T_QUE.QUESTIONS, MAX(T_CHO.CHOICE) AS MAX_CHO" +
-                "FROM (questions AS T_QUE" +
-	            "INNER JOIN question_choice_code AS T_QUE_CHO_COD" +
-                "ON T_QUE.QUESTIONS_ID = T_QUE_CHO_COD.QUESTIONS_ID)" +
-                "INNER JOIN statistics T_STA" +
-                "ON  T_QUE_CHO_COD.QUESTION_CHOICE_CODE = T_STA.QUESTION_CHOICE_CODE" +
-                "INNER JOIN choice AS T_CHO" +
-                "ON T_QUE_CHO_COD.CHOICE_ID = T_CHO.CHOICE_ID" +
+                "FROM respondents AS T_RES" +
+	            "INNER JOIN statistics AS T_STA " +
+                "ON T_RES.RESPONDENTS_ID =  T_STA.RESPONDENTS_ID" +
+		        "INNER JOIN questions AS T_QUE" +
+                "ON T_QUE.QUESTIONS_ID =  T_STA.QUESTIONS_ID" +
+			    "INNER JOIN choice T_CHO" +
+                "ON  T_CHO.CHOICE_ID = T_STA.CHOICE_ID" +
                 "GROUP BY T_QUE.QUESTIONS";
-        Statement statement1 = connection.createStatement();
-        ResultSet resultSet1 = statement.executeQuery(query1) ;
-        while (resultSet1.next()) {
-            System.out.println(
-                resultSet.getString("QUESTIONS") + ", " +
-                resultSet.getInt("MAX_CHO"));
 
 // -- 답항 중심
 // (1)전혀 아니다.	--> 0 
@@ -81,13 +77,11 @@ public class PollStatistics {
 // 출력
         String query2;
         ResultSet resultSet2;
-        query2 = "SELECT T_CHO.CHOICE, COUNT(*) AS CNT" + 
-                "FROM (question_choice_code AS T_QUE_CHO_COD" +
-	            "INNER JOIN choice AS T_CHO" +  
-	            "ON T_QUE_CHO_COD.CHOICE_ID = T_CHO.CHOICE_ID)" +
-                "INNER JOIN statistics T_STA" +
-                "ON T_QUE_CHO_COD.QUESTION_CHOICE_CODE = T_STA.QUESTION_CHOICE_CODE" +
-                "GROUP BY T_CHO.CHOICE_ID "; 
+        query2 = "SELECT T_CHO.CHOICE, COUNT(*) AS CNT" +
+                "FROM choice AS T_CHO" +
+		            "INNER JOIN statistics T_STA" +
+		            "ON T_CHO.CHOICE_ID = T_STA.CHOICE_ID" +
+                "GROUP BY T_CHO.CHOICE_ID" ;
         Statement statement2 = connection.createStatement();
         ResultSet resultSet2 = statement.executeQuery(query2) ;
         while (resultSet2.next()) {
