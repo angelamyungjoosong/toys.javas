@@ -37,7 +37,7 @@ public class PollList
                                 }
                                 System.out.println();
                                 System.out.print("답: ");
-                                String answer = scanner.nextLine();
+                                int answer = scanner.nextInt();
                 }
             }
             catch (Exception e)
