@@ -18,6 +18,7 @@ https://github.com/angelamyungjoosong/toys.javas/blob/master/src/PollsWithDB.jav
 ## REFER
 - ERD https://github.com/angelamyungjoosong/toys.javas/blob/master/document/DB_POLLS.png
 - 화면사항 정의서 https://drive.google.com/drive/folders/1NF-mGKzbmYy0t0jmHG5fKsPn86ncqlXG
+- Naming rule https://github.com/angelamyungjoosong/toys.javas/blob/master/document/Naming_Rule_%EA%B1%B0%EC%A7%80%EC%A3%BC%EC%9D%B8%ED%8C%80.pdf
 
 ## RUN 
 - YOUTUBE https://www.youtube.com/watch?v=xh_YaSeL3YA
