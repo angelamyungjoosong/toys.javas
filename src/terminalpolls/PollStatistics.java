@@ -42,7 +42,7 @@ public class PollStatistics {
     
     
     // -- 총 설문자 : 4명 을 출력
-        query = "SELECT COUNT(*)" +
+        query = "SELECT COUNT(*) AS CNT_RES" +
                 "FROM respondents AS T_RES" +
 	                "INNER JOIN statistics AS T_STA" +
                     "ON T_RES.RESPONDENTS_ID = T_STA.RESPONDENTS_ID";
@@ -77,16 +77,16 @@ public class PollStatistics {
 // 출력
         String query2;
         ResultSet resultSet2;
-        query2 = "SELECT T_CHO.CHOICE, COUNT(*) AS CNT" +
+        query = "SELECT T_CHO.CHOICE, COUNT(*) AS CNT" +
                 "FROM choice AS T_CHO" +
 		            "INNER JOIN statistics T_STA" +
 		            "ON T_CHO.CHOICE_ID = T_STA.CHOICE_ID" +
                 "GROUP BY T_CHO.CHOICE_ID" ;
         Statement statement2 = connection.createStatement();
-        ResultSet resultSet2 = statement.executeQuery(query2) ;
+        ResultSet resultSet2 = statement.executeQuery(query) ;
         while (resultSet2.next()) {
             System.out.println(
-                resultSet.getString("CHOICE") + ", " +
+                resultSet.getString("T_CHO.CHOICE") + ", " +
                 resultSet.getInt("CNT"));
 
 
