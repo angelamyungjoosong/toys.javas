@@ -5,8 +5,6 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
-
 public class PollsWithDB {
     public static HashMap<String, String> map2 = new HashMap<>();
     public static HashMap<String, String> resNumberMap = new HashMap<>();
@@ -27,7 +25,6 @@ public class PollsWithDB {
             Scanner scanner = new Scanner(System.in);
             String query = "";
             String query2 = "";
-            String query3 = "";
             int num = 1;
             int number = 1;
             HashMap<String, String> map1 = new HashMap<>();
