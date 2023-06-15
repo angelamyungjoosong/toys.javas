@@ -50,7 +50,7 @@ public class PollsWithDB {
                             System.out.print("-Error- 확인 후 입력 필요");
                             cnt = 0;
                         } else {
-                            System.out.print("--설문시작");
+                            System.out.println("--설문시작");
                             cnt = 1;
                             query3 = "select questions\n" + //
                                     "from questions as ques";
@@ -66,7 +66,7 @@ public class PollsWithDB {
                                 }
                                 System.out.println();
                                 System.out.print("답: ");
-                                String answer = scanner.nextLine();
+                                int answer = scanner.nextInt();
                             }
                         }
                     }

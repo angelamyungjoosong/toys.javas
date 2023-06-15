@@ -53,6 +53,7 @@ public class PollList
                 {
                     map1.put(questionID, map2.get(answer));
                 }
+                System.out.println();
             }
         }
             catch (Exception e)
