@@ -23,7 +23,7 @@ https://github.com/angelamyungjoosong/toys.javas/blob/master/src/PollsWithDB.jav
 - YOUTUBE https://www.youtube.com/watch?v=xh_YaSeL3YA
 
 ## THE END...
-- 프로젝트 소감
+프로젝트 소감
 
 
 - 정지운: 프로젝트를 시작하기 전에 HASHMAP에 대해 자세하게 몰랐는데 적용하기 위해서 하다보니까 더 자세히 알게 되었다 
