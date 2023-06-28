@@ -13,10 +13,10 @@
 
 
 ## REFER
-- [ERD] (https://github.com/angelamyungjoosong/toys_servlets/blob/main/src/main/resources/static/DB_POLL.png)
-- [Naming rule] (https://docs.google.com/spreadsheets/d/1cnlaqKFddp3MFkyYRy-TfryNVz4rtPno/edit#gid=1553145129)
-- [PPT] (https://docs.google.com/presentation/d/1eYnRALhFAFlGyZqvxpjgU6HkYlWtnpc-XhbbafLpEAI/edit#slide=id.p1)
-- [YOUTUBE] (https://www.youtube.com/watch?v=xtDzugX-DgE)
+- [ERD](https://github.com/angelamyungjoosong/toys_servlets/blob/main/src/main/resources/static/DB_POLL.png)
+- [Naming rule](https://docs.google.com/spreadsheets/d/1cnlaqKFddp3MFkyYRy-TfryNVz4rtPno/edit#gid=1553145129)
+- [PPT](https://docs.google.com/presentation/d/1eYnRALhFAFlGyZqvxpjgU6HkYlWtnpc-XhbbafLpEAI/edit#slide=id.p1)
+- [YOUTUBE](https://www.youtube.com/watch?v=xtDzugX-DgE)
 
 ## THE END...
 프로젝트 소감
